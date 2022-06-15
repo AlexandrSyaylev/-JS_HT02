@@ -33,8 +33,8 @@ function worker2(arr) {
   let min, max, d;
   min = max = d = arr[0];
   arr.forEach(element => {
-    if (min <= element ) {min = element};
-    if (max >= element ) {max = element};
+    if (min >= element ) {min = element};
+    if (max <= element ) {max = element};
   });
   d = max-min;
   return Math.abs(d);
